@@ -10,19 +10,19 @@ A healthcare triage and consultation web app that uses machine learning to predi
 
 The app includes three role-based dashboards:
 
-- **Patient**: Select symptoms, get an instant ML risk score and condition prediction, read health advisory guidelines, and view doctor prescriptions.
-- **Doctor**: View a queue of patient cases matched by specialty, review reported symptoms and ML predictions, and submit diagnostic notes and prescriptions.
-- **Admin**: Check system metrics, view disease and risk trend charts, and manage patient/doctor accounts.
+- **Patient**: Select symptoms, receive an ML-based risk score and disease prediction, read health advisory guidelines, and view doctor prescriptions.
+- **Doctor**: View incoming patient cases matched by specialty, review reported symptoms and ML predictions, and submit diagnostic notes and prescriptions.
+- **Admin**: Monitor system metrics, view disease and risk trend analytics, and manage patient and doctor accounts.
 
 ---
 
 ## Tech Stack
 
-- **Frontend**: React 19, Vite, Lucide React, Oxlint, Vanilla CSS3
-- **Backend**: Python 3.11, Flask, Flask-CORS, PyMongo, Gunicorn, python-dotenv
-- **Machine Learning & Data**: Scikit-learn (Random Forest, Pipelines, One-Hot Encoding, Preprocessing), Pandas, NumPy, Joblib
+- **Frontend**: React, Vite, Lucide React
+- **Backend**: Python, Flask, Flask-CORS, PyMongo
 - **Database**: MongoDB Atlas
-- **DevOps & Deployment**: Docker, Docker Compose, Nginx, Render
+- **Machine Learning**: Scikit-learn (Random Forest, Pipelines), Pandas, NumPy, Joblib
+- **Deployment**: Docker, Docker Compose
 
 ---
 
@@ -41,9 +41,7 @@ medi_ai/
 
 ## Quick Start
 
-### Option 1: Using Docker Compose (Recommended)
-
-Make sure you have Docker installed, then run:
+### Option 1: Using Docker Compose
 
 ```bash
 docker-compose up --build
