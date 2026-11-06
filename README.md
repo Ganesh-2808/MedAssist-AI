@@ -14,25 +14,15 @@ The app includes three role-based dashboards:
 - **Doctor**: View a queue of patient cases matched by specialty, review reported symptoms and ML predictions, and submit diagnostic notes and prescriptions.
 - **Admin**: Check system metrics, view disease and risk trend charts, and manage patient/doctor accounts.
 
-### Demo Credentials
-
-| Role | Username | Password |
-| :--- | :--- | :--- |
-| Patient | `alex_patient` | `password123` |
-| Doctor | `dr_sarah` | `password123` |
-| Admin | `admin` | `admin123` |
-
-*(You can also register a new account on the login page.)*
-
 ---
 
 ## Tech Stack
 
-- **Frontend**: React 19, Vite, Lucide Icons
-- **Backend**: Python 3.11, Flask, Gunicorn
-- **Machine Learning**: Scikit-learn (Disease prediction, Symptom severity scoring, CVD risk assessment)
+- **Frontend**: React 19, Vite, Lucide React, Oxlint, Vanilla CSS3
+- **Backend**: Python 3.11, Flask, Flask-CORS, PyMongo, Gunicorn, python-dotenv
+- **Machine Learning & Data**: Scikit-learn (Random Forest, Pipelines, One-Hot Encoding, Preprocessing), Pandas, NumPy, Joblib
 - **Database**: MongoDB Atlas
-- **DevOps**: Docker, Docker Compose, Nginx
+- **DevOps & Deployment**: Docker, Docker Compose, Nginx, Render
 
 ---
 
@@ -87,9 +77,3 @@ npm run dev
 ```
 
 Open `http://localhost:5173` in your browser.
-
----
-
-## License
-
-MIT
